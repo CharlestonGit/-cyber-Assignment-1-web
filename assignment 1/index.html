@@ -1,0 +1,81 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+
+    <!-- CSS LINK (IMPORTANT) -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Alwyn Charles</h1>
+    <p>Aspiring Web Developer</p>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section id="welcome">
+    <h2>Welcome!</h2>
+    <p>Welcome to my portfolio website.</p>
+    <button onclick="showAlert()">Click Me</button>
+</section>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>I am a B.Tech student learning web development.</p>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>Created using HTML and CSS.</p>
+    </div>
+
+    <div class="project-card">
+        <h3>JavaScript Demo</h3>
+        <p>Basic interactivity using JS.</p>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+
+    <form onsubmit="return handleSubmit()">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 Alwyn Charles</p>
+</footer>
+
+<!-- JS LINK (IMPORTANT - before closing body) -->
+<script src="script.js"></script>
+
+</body>
+</html>
